@@ -1,0 +1,104 @@
+.colors {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+#color1 {
+    background-color: red;
+    color: red;
+    float: left;
+}
+
+#color2 {
+    background-color: blue;
+    color: blue;
+    float: right;
+}
+
+.buttons {
+    width: 100%;
+    position: absolute;
+}
+
+.buttons span {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 5px solid;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    position: static;
+    cursor: pointer;
+}
+
+.buttons p {
+    display: table-cell;
+    vertical-align: middle;
+    position: static;
+    font-size: 48px;
+}
+
+#yes {
+    color: black;
+    top: 17%;
+}
+
+#yes span {
+    background-color: white;
+}
+
+#no {
+    color: white;
+    bottom: 17%;
+    vertical-align: middle;
+}
+
+#no span {
+    background-color: black;
+    border-color: white;
+}
+
+#no span:hover, #yes span:hover, span.hovered {
+    height: 160px;
+    width: 160px;
+    font-size: 54px;
+}
+
+#header, #help {
+    position: absolute;
+    width: 100%;
+/* text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 0px 0px 0px #fff; */
+    white-space: nowrap;
+}
+
+#header {
+    background-color: white;
+    border-bottom: solid 5px black;
+    color: black;
+}
+
+#help {
+    bottom: 0px;
+    background-color: black;
+    border-top: solid 5px white;
+    color: white;
+}
+
+div {
+    text-align: center;
+    font-size: 18px;
+}
+
+html {
+    min-height: 100%;
+/* make sure it is at least as tall as the viewport */
+    position: relative;
+    overflow-y: hidden;
+}
+
+body {
+    min-height: 500px;
+}
